@@ -2,34 +2,30 @@
 <html>
 <head>
     <title> Your Finances</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-</head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"></head>
 <body>
     <div class="final">
-        <h1>Your Finances</h1>
-        <h3 id="information">information</h3>
-        <div class="quiz">
-            <h2 id="question">INSERT Q1</h2>
-            <div id="answerBtn">
-                <button class="chat" id="chat">A1</button>
-            </div>
-            <div id="nextButtonContainer" style="display: none;">
-                <button id="nextBtn">Next</button>
-            </div>
+        <h1>Welcome to Your Path to Financial Freedom!</h1>
+        <h3 id="information">Are you ready to take control of your finances and start your journey towards a more secure and prosperous future? You've come to the right place. On this page, we're here to empower you with the knowledge and tools you need to create a robust and effective budget. Whether you're looking to save for a dream vacation, pay off debt, or build a nest egg for your future, we've got you covered. Let's embark on this financial adventure together and pave the way to a brighter and more financially savvy tomorrow. So, let's dive in and start making your financial dreams a reality!</h3>
         </div>
     </div>
-    <div class="app">
-        <h1>Your Finances</h1>
-        <h3 id="information">information</h3>
-        <div class="quiz">
-            <h2 id="question">INSERT Q1</h2>
-            <div id="answerBtn">
-                <button class="chat" id="chat">A1</button>
-            </div>
-            <div id="nextButtonContainer" style="display: none;">
-                <button id="nextBtn">Next</button>
-            </div>
-        </div>
+    <div class="final">
+        <h1>Money Flow</h1>
+        <h3 id="information">Total Average Spending(month): </h3>
+        <h3 id="information">Necessity Spending: </h3>
+        <h3 id="information">Non-necessity Spending: </h3>
+    </div>
+    <div style="border: 5px solid white; margin: auto; width: 65%; padding: 16px; color: white; border-top: 10px solid white; border-bottom: 10px solid white; margin-top: 30px; margin-bottom: 30px;">
+        <h1>Necessity Spending Predictions</h1>
+        <h3 id="information">Given your past spending habits, here is how we estimate your future spending to be!</h3>
+        
+        <img src="{{ url_for('static', filename='wantsProj.png') }}" alt="projection of non-necessary spending">
+    </div>
+    
+    
+    
+   
+    </div>
     </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
