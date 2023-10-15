@@ -41,3 +41,19 @@ plt.tight_layout()
 plt.xticks(rotation=45)
 plt.savefig('wantsProj.png')
 print("done")
+
+#NONNESSESITY avg monthly
+data = pd.read_csv('nonnecessities.csv')
+data['Date'] = pd.to_datetime(data['Date'])
+data['Month'] = data['Date'].dt.to_period('M')
+monthly_avg = data.groupby('Month')['Price'].mean()
+nnMonthavg = monthly_avg
+print("done")
+
+#NESSESITY avg monthly
+data = pd.read_csv('necessities.csv')
+data['Date'] = pd.to_datetime(data['Date'])
+data['Month'] = data['Date'].dt.to_period('M')
+monthly_avg = data.groupby('Month')['Price'].mean()
+nMonthavg = monthly_avg
+print("done")
