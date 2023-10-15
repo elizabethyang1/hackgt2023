@@ -8,6 +8,17 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - ask_personal_finance
+  - ask_create_budget
+  - ask_types_of_insurance
+  - ask_investment_options
+  - ask_plan_for_retirement
+  - ask_improve_credit_score
+  - ask_steps_to_buy_home
+  - ask_save_emergency_fund
+
+actions:
+  - action_retrieve_faq
 
 responses:
   utter_greet:
@@ -28,6 +39,14 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+
+# slots:
+#   requested_faq:
+#     type: text
+#     mappings:
+#       budgeting: budgeting_questions
+#       credit: credit_questions
 
 session_config:
   session_expiration_time: 60
