@@ -1,0 +1,58 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to ask_personal_finance
+  steps:
+  - intent: ask_personal_finance
+  - action: action_retrieve_faq
+
+- rule: Respond to ask_create_budget
+  steps:
+  - intent: ask_create_budget
+  - action: action_retrieve_faq
+
+- rule: Respond to ask_types_of_insurance
+  steps:
+  - intent: ask_types_of_insurance
+  - action: action_retrieve_faq
+
+- rule: Respond to ask_credit_score
+  steps:
+  - intent: ask_credit_score
+  - action: action_retrieve_faq
+
+- rule: Respond to ask_investment_strategies
+  steps:
+  - intent: ask_investment_strategies
+  - action: action_retrieve_faq
+
+- rule: Respond to ask_tax_filing
+  steps:
+  - intent: ask_tax_filing
+  - action: action_retrieve_faq
+
+- rule: Respond to ask_retirement_planning
+  steps:
+  - intent: ask_retirement_planning
+  - action: action_retrieve_faq
+
+# - rule: Respond to ask_savings_tips
+#   steps:
+#   - intent: ask_savings_tips
+#   - action: action_retrieve_faq
+
+# - rule: Respond to unknown_intent
+#   steps:
+#   - action: utter_default
+

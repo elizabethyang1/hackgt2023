@@ -1,0 +1,793 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: ask_personal_finance
+  examples: |
+    - "What is personal finance?"
+    - "Can you explain personal finance?"
+    - "Tell me about managing finances."
+
+- intent: ask_create_budget
+  examples: |
+    - "How can I create a budget?"
+    - "Give me tips on budgeting."
+    - "What are the steps to create a budget?"
+
+- intent: ask_types_of_insurance
+  examples: |
+    - "What are the different types of insurance?"
+    - "Tell me about insurance options."
+    - "Explain the types of insurance available."
+
+- intent: ask_investment_options
+  examples: |
+    - "What are some common investment options?"
+    - "Tell me about different investment choices."
+    - "What can I invest my money in?"
+
+- intent: ask_plan_for_retirement
+  examples: |
+    - "How do I plan for retirement?"
+    - "What's the best way to plan for retirement?"
+    - "Give me retirement planning tips."
+
+- intent: ask_improve_credit_score
+  examples: |
+    - "How can I improve my credit score?"
+    - "Tips for increasing my credit score?"
+    - "Ways to boost my credit score?"
+
+- intent: ask_steps_to_buy_home
+  examples: |
+    - "What are the steps to buying a home?"
+    - "Guide me through the home buying process."
+    - "How to purchase a house?"
+
+- intent: ask_save_emergency_fund
+  examples: |
+    - "How can I save for an emergency fund?"
+    - "Tips for saving up for emergencies?"
+    - "What's the best way to build an emergency fund?"
+
+- intent: ask_key_elements_of_retirement_plan
+  examples: |
+    - "What are the key elements of a retirement plan?"
+    - "Explain the components of a retirement plan."
+    - "What should I include in my retirement plan?"
+
+- intent: ask_difference_between_401k_and_ira
+  examples: |
+    - "What is the difference between a 401(k) and an IRA?"
+    - "Explain the distinctions between a 401(k) and an IRA."
+    - "How does a 401(k) differ from an IRA?"
+
+- intent: ask_how_to_reduce_debt
+  examples: |
+    - "How can I reduce my debt?"
+    - "Give me tips on reducing debt."
+    - "Ways to get rid of my debt?"
+
+- intent: ask_importance_of_diversifying_investments
+  examples: |
+    - "Why is diversifying investments important?"
+    - "Explain the significance of diversification in investments."
+    - "What are the benefits of having a diversified investment portfolio?"
+
+- intent: ask_difference_between_traditional_and_roth_ira
+  examples: |
+    - "What is the difference between a traditional IRA and a Roth IRA?"
+    - "Explain the distinctions between traditional and Roth IRAs."
+    - "How does a traditional IRA differ from a Roth IRA?"
+
+- intent: ask_difference_between_stock_and_bond
+  examples: |
+    - "What is the difference between a stock and a bond?"
+    - "Explain the distinctions between stocks and bonds."
+    - "How do stocks differ from bonds?"
+
+- intent: ask_difference_between_credit_card_and_debit_card
+  examples: |
+    - "What is the difference between a credit card and a debit card?"
+    - "Explain the distinctions between credit cards and debit cards."
+    - "How do credit cards differ from debit cards?"
+
+- intent: ask_common_tax_deductions
+  examples: |
+    - "What are some common tax deductions?"
+    - "Tell me about tax deductions I can claim."
+    - "What can I deduct on my taxes?"
+
+- intent: ask_how_to_start_investing_with_small_budget
+  examples: |
+    - "How can I start investing with a small budget?"
+    - "What are my options for investing with a limited budget?"
+    - "How to begin investing with little money?"
+
+- intent: ask_how_to_plan_for_children_education
+  examples: |
+    - "How can I plan for my children's education?"
+    - "What steps should I take to save for my kids' education?"
+    - "How to prepare financially for my children's education?"
+
+- intent: ask_difference_between_traditional_and_roth_ira
+  examples: |
+    - "What is the difference between a traditional IRA and a Roth IRA?"
+    - "Explain the distinctions between traditional and Roth IRAs."
+    - "How does a traditional IRA differ from a Roth IRA?"
+
+- intent: ask_how_to_negotiate_a_better_salary
+  examples: |
+    - "How can I negotiate a better salary?"
+    - "Give me tips on salary negotiation."
+    - "Ways to improve my salary negotiation skills?"
+
+- intent: ask_key_factors_in_determining_risk_tolerance_for_investments
+  examples: |
+    - "What are the key factors in determining my risk tolerance for investments?"
+    - "Explain the elements affecting my risk tolerance in investments."
+    - "How do I assess my risk tolerance for investing?"
+
+- intent: ask_strategies_to_save_on_everyday_expenses
+  examples: |
+    - "What are some strategies to save on everyday expenses?"
+    - "Give me tips for cutting down my daily spending."
+    - "How can I reduce my everyday expenses?"
+
+- intent: ask_what_is_a_budget
+  examples: |
+    - "What is a budget?"
+    - "Define a budget for me."
+    - "Explain the concept of budgeting."
+
+- intent: ask_how_to_start_budgeting
+  examples: |
+    - "How do I start budgeting?"
+    - "What are the initial steps to begin budgeting?"
+    - "How can I initiate the process of budgeting?"
+
+- intent: ask_why_is_budgeting_important
+  examples: |
+    - "Why is budgeting important?"
+    - "What are the benefits of budgeting?"
+    - "Explain the significance of budgeting."
+
+- intent: ask_what_are_fixed_expenses
+  examples: |
+    - "What are fixed expenses?"
+    - "Define fixed expenses for me."
+    - "Explain the concept of fixed expenses."
+
+- intent: ask_what_are_variable_expenses
+  examples: |
+    - "What are variable expenses?"
+    - "Define variable expenses for me."
+    - "Explain the concept of variable expenses."
+
+- intent: ask_how_to_reduce_expenses
+  examples: |
+    - "How can I reduce my expenses?"
+    - "Give me tips on cutting down my costs."
+    - "Ways to decrease my spending?"
+
+- intent: ask_what_is_an_emergency_fund
+  examples: |
+    - "What is an emergency fund?"
+    - "Define an emergency fund for me."
+    - "Explain the concept of an emergency fund."
+- intent: ask_how_much_to_save_for_emergency_fund
+  examples: |
+    - "How much should I save for an emergency fund?"
+    - "What's the recommended amount for an emergency fund?"
+    - "How do I determine the right size for an emergency fund?"
+    - "What's the ideal emergency fund amount?"
+- intent: ask_50_30_20_rule
+  examples: |
+    - "What is the 50/30/20 rule?"
+    - "Explain the 50/30/20 budgeting rule."
+    - "How does the 50/30/20 rule work?"
+
+- intent: ask_how_to_pay_off_debt_faster
+  examples: |
+    - "How can I pay off debt faster?"
+    - "Tips for accelerating my debt repayment."
+    - "Strategies to eliminate debt quickly."
+
+- intent: ask_what_is_a_credit_score
+  examples: |
+    - "What is a credit score?"
+    - "Explain what a credit score is."
+    - "Define the concept of a credit score."
+
+- intent: ask_how_to_improve_credit_score
+  examples: |
+    - "How can I improve my credit score?"
+    - "Tips for boosting my credit score."
+    - "Ways to enhance my creditworthiness."
+
+- intent: ask_what_is_compound_interest
+  examples: |
+    - "What is compound interest?"
+    - "Explain the concept of compound interest."
+    - "Define how compound interest works."
+
+- intent: ask_how_to_start_investing
+  examples: |
+    - "How can I start investing?"
+    - "Tips for beginners on getting into investing."
+    - "Ways to initiate my investment journey."
+
+- intent: ask_what_is_a_401k
+  examples: |
+    - "What is a 401(k)?"
+    - "Explain the concept of a 401(k)."
+    - "Define what a 401(k) is."
+
+- intent: ask_what_is_a_roth_ira
+  examples: |
+    - "What is a Roth IRA?"
+    - "Explain the concept of a Roth IRA."
+    - "Define what a Roth IRA is."
+
+- intent: ask_how_to_set_financial_goals
+  examples: |
+    - "How can I set financial goals?"
+    - "Tips for setting and achieving financial goals."
+    - "Ways to establish and reach my financial objectives."
+
+- intent: ask_what_is_the_difference_between_saving_and_investing
+  examples: |
+    - "What is the difference between saving and investing?"
+    - "Explain the distinctions between saving and investing."
+    - "Define how saving differs from investing."
+
+- intent: ask_should_i_hire_a_financial_advisor
+  examples: |
+    - "Should I hire a financial advisor?"
+    - "Is it advisable to get a financial advisor?"
+    - "When is the right time to seek a financial advisor?"
+
+- intent: ask_how_to_protect_financial_future
+  examples: |
+    - "How can I protect my financial future?"
+    - "Tips for securing my financial well-being."
+    - "Ways to ensure a stable financial future."
+
+- intent: ask_what_is_a_credit_report_and_how_to_obtain_it
+  examples: |
+    - "What is a credit report, and how do I obtain it?"
+    - "Explain what a credit report is and how to get it."
+    - "Define a credit report and provide information on how to access it."
+
+- intent: ask_how_to_reduce_taxes_legally
+  examples: |
+    - "How can I reduce my taxes legally?"
+    - "Tips for minimizing my tax liability within legal means."
+    - "Ways to legally lower my tax burden."
+
+- intent: ask_importance_of_diversification_in_investing
+  examples: |
+    - "What is the importance of diversification in investing?"
+    - "Explain why diversifying investments is crucial."
+    - "Define the significance of diversifying my investment portfolio."
+
+- intent: ask_what_is_a_529_plan
+  examples: |
+    - "What is a 529 plan?"
+    - "Explain the concept of a 529 plan."
+    - "Define what a 529 plan is."
+
+- intent: ask_how_to_teach_children_about_personal_finance
+  examples: |
+    - "How can I teach my children about personal finance?"
+    - "Tips for educating my kids about money matters."
+    - "Ways to introduce personal finance to my children."
+
+- intent: ask_what_is_the_difference_between_traditional_and_roth_ira
+  examples: |
+    - "What is the difference between a traditional IRA and a Roth IRA?"
+    - "Explain the distinctions between traditional and Roth IRAs."
+    - "How does a traditional IRA differ from a Roth IRA?"
+
+- intent: ask_importance_of_an_estate_plan
+  examples: |
+    - "What is the importance of an estate plan?"
+    - "Explain why having an estate plan is important."
+    - "Define the significance of an estate plan."
+
+- intent: ask_how_to_protect_personal_information_and_financial_security_online
+  examples: |
+    - "How can I protect my personal information and financial security online?"
+    - "Tips for safeguarding my online privacy and financial data."
+    - "Ways to enhance my online financial security."
+
+- intent: ask_what_is_the_difference_between_a_stock_and_a_bond
+  examples: |
+    - "What is the difference between a stock and a bond?"
+    - "Explain the distinctions between stocks and bonds."
+    - "How do stocks differ from bonds?"
+
+- intent: ask_what_is_a_will_and_how_to_create_one
+  examples: |
+    - "What is a will, and how do I create one?"
+    - "Explain what a will is and provide information on creating it."
+    - "Define a will and guide me on creating one."
+
+- intent: ask_how_to_avoid_impulse_spending
+  examples: |
+    - "How can I avoid impulse spending?"
+    - "Tips for controlling impulsive purchases."
+    - "Ways to curb my tendency to make impulsive buys."
+
+- intent: ask_what_is_the_rule_of_72_in_investing
+  examples: |
+    - "What is the rule of 72 in investing?"
+    - "Explain the concept of the rule of 72 in investments."
+    - "Define how the rule of 72 works in investing."
+
+- intent: ask_what_is_a_certificate_of_deposit
+  examples: |
+    - "What is a certificate of deposit (CD)?"
+    - "Explain the concept of a certificate of deposit."
+    - "Define what a certificate of deposit (CD) is."
+
+- intent: ask_how_to_deal_with_financial_setbacks_or_unexpected_expenses
+  examples: |
+    - "How can I deal with financial setbacks or unexpected expenses?"
+    - "Tips for handling financial challenges and unexpected costs."
+    - "Ways to cope with financial setbacks and unforeseen expenses."
+
+- intent: ask_significance_of_an_emergency_budget
+  examples: |
+    - "What is the significance of an emergency budget?"
+    - "Explain why having an emergency budget is important."
+    - "Define the significance of an emergency budget."
+
+- intent: ask_how_to_save_money_on_everyday_expenses
+  examples: |
+    - "How can I save money on everyday expenses?"
+    - "Tips for cutting down everyday spending."
+    - "Ways to reduce my daily expenses."
+
+- intent: ask_what_is_financial_independence_retire_early_fire
+  examples: |
+    - "What is financial independence, retire early (FIRE)?"
+    - "Explain the concept of financial independence and early retirement (FIRE)."
+    - "Define what financial independence and retiring early (FIRE) mean."
+
+- intent: ask_how_to_make_the_most_of_employee_benefits
+  examples: |
+    - "How can I make the most of employee benefits, like a 401(k) or health savings account (HSA)?"
+    - "Tips for optimizing employee benefits and utilizing 401(k)s and HSAs."
+    - "Ways to maximize the advantages of employee benefits, including 401(k)s and HSAs."
+
+- intent: ask_what_is_dollar_cost_averaging_in_investing
+  examples: |
+    - "What is dollar-cost averaging in investing?"
+    - "Explain the concept of dollar-cost averaging in investment."
+    - "Define how dollar-cost averaging works in investing."
+
+- intent: ask_what_is_a_financial_statement_and_how_to_create_one
+  examples: |
+    - "What is a financial statement, and how do I create one?"
+    - "Explain what a financial statement is and guide me on creating it."
+    - "Define a financial statement and provide information on creating one."
+
+- intent: ask_how_to_negotiate_better_financial_terms
+  examples: |
+    - "How can I negotiate better financial terms with creditors or service providers?"
+    - "Tips for negotiating improved financial terms with creditors and service providers."
+    - "Ways to enhance financial agreements and terms through negotiation."
+
+- intent: ask_role_of_insurance_in_personal_finance
+  examples: |
+    - "What is the role of insurance in personal finance?"
+    - "Explain the importance of insurance in managing personal finances."
+    - "Define how insurance plays a role in personal financial management."
+
+- intent: ask_difference_between_traditional_savings_account_and_high_yield_savings_account
+  examples: |
+    - "What is the difference between a traditional savings account and a high-yield savings account?"
+    - "Explain the distinctions between traditional and high-yield savings accounts."
+    - "Define how traditional savings accounts differ from high-yield savings accounts."
+
+- intent: ask_how_to_plan_for_retirement_without_401k_or_employer_sponsored_plan
+  examples: |
+    - "How can I plan for retirement if I don't have access to a 401(k) or employer-sponsored plan?"
+    - "Tips for retirement planning without a 401(k) or employer-sponsored plan."
+    - "Ways to prepare for retirement in the absence of a 401(k) or employer-sponsored retirement plan."
+
+- intent: ask_financial_advisor_role_and_when_to_consider_seeking_one
+  examples: |
+    - "What is a financial advisor's role, and when should I consider seeking one?"
+    - "Explain the responsibilities of a financial advisor and when to consult one."
+    - "Define the role of a financial advisor and provide guidance on when to seek their assistance."
+
+- intent: ask_how_to_set_and_prioritize_financial_goals_for_different_life_stages
+  examples: |
+    - "How can I set and prioritize financial goals for different life stages?"
+    - "Tips for setting and ranking financial objectives based on life stages."
+    - "Ways to establish and prioritize financial goals at various phases of life."
+
+- intent: ask_how_to_manage_finances_as_a_college_student
+  examples: |
+    - "How can I manage my finances as a college student?"
+    - "Tips for handling money and budgeting as a college student."
+    - "Ways to effectively manage finances while in college."
+
+- intent: ask_how_to_avoid_common_personal_finance_mistakes
+  examples: |
+    - "How can I avoid common personal finance mistakes?"
+    - "Tips for steering clear of typical financial blunders."
+    - "Ways to prevent common mistakes in personal finance."
+
+- intent: ask_how_to_choose_the_right_credit_card
+  examples: |
+    - "How can I choose the right credit card for my needs?"
+    - "Tips for selecting the best credit card for my lifestyle."
+    - "Ways to pick the most suitable credit card for my requirements."
+
+- intent: ask_how_to_manage_finances_after_retirement
+  examples: |
+    - "How can I manage my finances after retirement?"
+    - "Tips for handling finances during retirement."
+    - "Ways to effectively manage money post-retirement."
+
+- intent: ask_how_to_manage_finances_as_a_freelancer_or_self_employed_individual
+  examples: |
+    - "How can I manage my finances as a freelancer or self-employed individual?"
+    - "Tips for handling finances when self-employed."
+    - "Ways to effectively manage money as a freelancer or self-employed person."
+
+- intent: ask_how_to_invest_in_real_estate
+  examples: |
+    - "How can I invest in real estate?"
+    - "Tips for investing in real estate."
+    - "Ways to get started with real estate investments."
+
+- intent: ask_how_to_track_expenses
+  examples: |
+    - "How can I effectively track my expenses?"
+    - "Tips for monitoring and managing expenses."
+    - "Ways to keep track of my spending and budget."
+
+- intent: ask_how_to_manage_finances_as_a_small_business_owner
+  examples: |
+    - "How can I manage my finances as a small business owner?"
+    - "Tips for handling finances in a small business."
+    - "Ways to effectively manage money as a small business owner."
+
+- intent: ask_how_to_prepare_for_an_economic_downturn
+  examples: |
+    - "How can I prepare for an economic downturn or recession?"
+    - "Tips for getting ready for an economic downturn."
+    - "Ways to protect my finances during an economic downturn or recession."
+
+- intent: ask_how_to_invest_in_stock_market
+  examples: |
+    - "How can I start investing in the stock market?"
+    - "Tips for investing in stocks and shares."
+    - "Ways to begin investing in the stock market."
+
+- intent: ask_how_to_manage_debt
+  examples: |
+    - "How can I effectively manage my debt?"
+    - "Tips for handling and reducing debt."
+    - "Ways to get control over my debt."
+
+- intent: ask_how_to_manage_finances_as_a_single_parent
+  examples: |
+    - "How can I manage my finances as a single parent?"
+    - "Tips for handling finances as a single parent."
+    - "Ways to effectively manage money as a single parent."
+
+- intent: ask_how_to_prepare_for_a_financial_crisis
+  examples: |
+    - "How can I prepare for a financial crisis?"
+    - "Tips for getting ready for a financial crisis."
+    - "Ways to protect my finances during a financial crisis."
+
+- intent: ask_how_to_invest_in_mutual_funds
+  examples: |
+    - "How can I start investing in mutual funds?"
+    - "Tips for investing in mutual funds."
+    - "Ways to begin investing in mutual funds."
+
+- intent: ask_how_to_manage_finances_as_a_couple
+  examples: |
+    - "How can my partner and I manage our finances as a couple?"
+    - "Tips for handling finances together as a couple."
+    - "Ways for both of us to effectively manage our money as a couple."
+
+- intent: ask_how_to_prepare_for_retirement_in_your_20s_30s_40s_50s_60s
+  examples: |
+    - "How can I prepare for retirement in my 20s, 30s, 40s, 50s, or 60s?"
+    - "Tips for preparing for retirement at different stages of life."
+    - "Ways to save and plan for retirement based on my age."
+
+- intent: ask_how_to_start_a_savings_plan
+  examples: |
+    - "How can I start a savings plan?"
+    - "Tips for creating a savings plan and saving money."
+    - "Ways to begin a savings plan and grow my savings."
+
+- intent: ask_how_to_choose_the_right_insurance_policy
+  examples: |
+    - "How can I choose the right insurance policy for my needs?"
+    - "Tips for selecting the best insurance coverage for my situation."
+    - "Ways to pick the most suitable insurance policy for my requirements."
+
+- intent: ask_how_to_prepare_for_major_life_events_financially
+  examples: |
+    - "How can I prepare for major life events, like buying a house, getting married, or having children, financially?"
+    - "Tips for handling major life events financially and planning for them."
+    - "Ways to financially prepare for significant life milestones such as buying a house, getting married, or having children."
+
+- intent: ask_how_to_start_a_retirement_savings_plan
+  examples: |
+    - "How can I start a retirement savings plan?"
+    - "Tips for initiating a retirement savings plan and saving for retirement."
+    - "Ways to begin a retirement savings plan and build a retirement nest egg."
+
+- intent: ask_how_to_manage_finances_as_a_student
+  examples: |
+    - "How can I manage my finances as a student?"
+    - "Tips for handling money and budgeting while in school."
+    - "Ways to effectively manage finances as a student."
+
+- intent: ask_how_to_protect_finances_in_case_of_disability
+  examples: |
+    - "How can I protect my finances in case of disability?"
+    - "Tips for safeguarding my finances if I become disabled."
+    - "Ways to ensure financial security in the event of a disability."
+
+- intent: ask_how_to_start_a_childs_savings_plan
+  examples: |
+    - "How can I start a savings plan for my child's future?"
+    - "Tips for initiating a savings plan for my child's education or other needs."
+    - "Ways to begin a savings plan for my child's future and secure their financial well-being."
+
+- intent: ask_how_to_plan_for_an_early_retirement
+  examples: |
+    - "How can I plan for an early retirement?"
+    - "Tips for preparing for an early retirement and achieving financial independence."
+    - "Ways to retire early and enjoy financial freedom."
+
+- intent: ask_how_to_manage_finances_while_traveling
+  examples: |
+    - "How can I manage my finances while traveling or living abroad?"
+    - "Tips for handling money and budgeting during travel or while living in a different country."
+    - "Ways to effectively manage finances while traveling or residing in a foreign place."
+
+- intent: ask_how_to_reduce_financial_stress
+  examples: |
+    - "How can I reduce financial stress?"
+    - "Tips for alleviating financial anxiety and stress."
+    - "Ways to manage financial pressure and find peace of mind."
+
+- intent: ask_how_to_create_a_financial_plan
+  examples: |
+    - "How can I create a comprehensive financial plan?"
+    - "Tips for building a financial plan that aligns with my goals."
+    - "Ways to develop a solid financial plan for a secure future."
+
+- intent: ask_how_to_manage_finances_in_an_unstable_economy
+  examples: |
+    - "How can I manage my finances in an unstable or uncertain economy?"
+    - "Tips for handling money during economic instability."
+    - "Ways to navigate financial challenges in an unpredictable economy."
+
+- intent: ask_how_to_start_a_rainy_day_fund
+  examples: |
+    - "How can I start a rainy day fund?"
+    - "Tips for creating a fund for unexpected expenses or emergencies."
+    - "Ways to begin saving for unforeseen circumstances or emergencies."
+
+- intent: ask_how_to_prepare_for_major_medical_expenses
+  examples: |
+    - "How can I prepare for major medical expenses?"
+    - "Tips for handling substantial medical costs and planning for them."
+    - "Ways to financially prepare for significant medical expenditures."
+
+- intent: ask_how_to_make_the_most_of_bonus_or_windfall
+  examples: |
+    - "How can I make the most of a bonus or windfall?"
+    - "Tips for maximizing unexpected financial gains like a bonus or windfall."
+    - "Ways to wisely use and invest extra funds such as a bonus or windfall."
+
+- intent: ask_how_to_rebuild_credit_after_financial_setback
+  examples: |
+    - "How can I rebuild my credit after a financial setback?"
+    - "Tips for improving my credit score and rebuilding credit after financial difficulties."
+    - "Ways to recover and rebuild credit after a financial setback."
+
+- intent: ask_how_to_plan_for_a_family
+  examples: |
+    - "How can I plan for starting a family and the associated financial responsibilities?"
+    - "Tips for preparing for the financial responsibilities of starting a family."
+    - "Ways to manage finances when planning to start a family."
+
+- intent: ask_how_to_manage_finances_as_a_senior_citizen
+  examples: |
+    - "How can I manage my finances as a senior citizen or retiree?"
+    - "Tips for handling money and budgeting during retirement years."
+    - "Ways to effectively manage finances in the golden years of life."
+
+- intent: ask_how_to_make_the_most_of_tax_refund
+  examples: |
+    - "How can I make the most of my tax refund?"
+    - "Tips for utilizing and maximizing my tax refund."
+    - "Ways to wisely manage and invest my tax refund."
+
+- intent: ask_how_to_prepare_for_home_ownership_financially
+  examples: |
+    - "How can I prepare for home ownership financially?"
+    - "Tips for handling the financial aspects of buying a home."
+    - "Ways to financially prepare for owning a home."
+
+- intent: ask_how_to_reduce_financial_waste
+  examples: |
+    - "How can I reduce financial waste and unnecessary spending?"
+    - "Tips for cutting down on financial waste and improving budget efficiency."
+    - "Ways to minimize financial inefficiencies and save money."
+
+- intent: ask_how_to_protect_finances_in_case_of_identity_theft
+  examples: |
+    - "How can I protect my finances in case of identity theft or fraud?"
+    - "Tips for safeguarding my finances and identity from theft or fraud."
+    - "Ways to ensure financial security in the event of identity theft."
+
+- intent: ask_how_to_save_money_for_travel
+  examples: |
+    - "How can I save money for travel and vacations?"
+    - "Tips for budgeting and saving for travel experiences."
+    - "Ways to effectively save and plan for travel adventures."
+
+- intent: ask_how_to_prepare_for_major_home_repairs_or_renovations_financially
+  examples: |
+    - "How can I prepare for major home repairs or renovations financially?"
+    - "Tips for handling significant home-related expenses and planning for them."
+    - "Ways to financially prepare for major repairs or renovations for my home."
+
+- intent: ask_how_to_manage_finances_as_a_caretaker
+  examples: |
+    - "How can I manage my finances as a caretaker for a family member or loved one?"
+    - "Tips for handling finances while being a caretaker for a family member."
+    - "Ways to effectively manage money while taking care of a loved one."
+
+- intent: ask_how_to_start_investing_in_cryptocurrency
+  examples: |
+    - "How can I start investing in cryptocurrency?"
+    - "Tips for investing in digital currencies like cryptocurrency."
+    - "Ways to begin investing in cryptocurrencies."
+
+- intent: ask_how_to_reduce_financial_anxiety_and_stress
+  examples: |
+    - "How can I reduce financial anxiety and stress?"
+    - "Tips for managing financial pressure and finding peace of mind."
+    - "Ways to alleviate financial stress and anxiety."
+
+- intent: ask_how_to_prepare_for_educational_expenses
+  examples: |
+    - "How can I prepare for educational expenses, like tuition and textbooks?"
+    - "Tips for handling the financial aspects of education and planning for them."
+    - "Ways to financially prepare for educational costs."
+
+- intent: ask_how_to_save_for_a_major_purchase
+  examples: |
+    - "How can I save for a major purchase, like a car or a house?"
+    - "Tips for budgeting and saving for significant purchases."
+    - "Ways to effectively save and plan for a major buy."
+
+- intent: ask_how_to_prepare_for_career_change_financially
+  examples: |
+    - "How can I prepare for a career change financially?"
+    - "Tips for handling financial aspects during a career change."
+    - "Ways to financially prepare for transitioning careers."
+
+- intent: ask_how_to_manage_finances_as_a_divorcee
+  examples: |
+    - "How can I manage my finances after a divorce?"
+    - "Tips for handling finances as a divorcee and starting anew."
+    - "Ways to effectively manage money after a divorce."
+
+- intent: ask_how_to_prepare_for_caring_for_elderly_parents_financially
+  examples: |
+    - "How can I prepare for caring for my elderly parents financially?"
+    - "Tips for handling financial responsibilities when caring for elderly parents."
+    - "Ways to financially prepare for taking care of elderly parents."
+
+- intent: ask_credit_score
+  examples: |
+    - "How is a credit score calculated?"
+    - "What factors affect my credit score?"
+    - "What is a good credit score?"

@@ -1,0 +1,93 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+# - story: User asks about personal finance
+#   steps:
+#   - intent: ask_personal_finance
+#   - action: action_retrieve_faq
+#   # - slot_was_set:
+#   #   - requested_faq: "What is personal finance?"
+
+# - story: User asks about creating a budget
+#   steps:
+#   - intent: ask_create_budget
+#   - action: action_retrieve_faq
+#   # - slot_was_set:
+#   #   - requested_faq: "How can I create a budget?"
+#   # #- action: utter_faq_response
+
+# - story: User asks about types of insurance
+#   steps:
+#   - intent: ask_types_of_insurance
+#   - action: action_retrieve_faq
+#   # - slot_was_set:
+#   #   - requested_faq: "What are the different types of insurance?"
+#   #- action: utter_faq_response
+
+# - story: User asks about credit score
+#   steps:
+#   - intent: ask_credit_score
+#   - action: action_retrieve_faq
+#   # - slot_was_set:
+#   #   - requested_faq: "How is a credit score calculated?"
+#   #- action: utter_faq_response
+
+# - story: User asks about investment strategies
+#   steps:
+#   - intent: ask_investment_strategies
+#   - action: action_retrieve_faq
+#   # - slot_was_set:
+#   #   - requested_faq: "What are some investment strategies?"
+#   #- action: utter_faq_response
+
+# - story: User asks about tax filing
+#   steps:
+#   - intent: ask_how_to_make_the_most_of_tax_refund
+#   - action: action_retrieve_faq
+#   # - slot_was_set:
+#   #   - requested_faq: "How do I file my taxes?"
+#   #- action: utter_faq_response
+
+# - story: User asks about retirement planning
+#   steps:
+#   - intent: ask_plan_for_retirement
+#   - action: action_retrieve_faq
+#   # - slot_was_set:
+#   #   - requested_faq: "How do I plan for retirement?"
+#   #- action: utter_faq_response
+
+# - story: User asks for savings tips
+#   steps:
+#   - intent: ask_savings_tips
+#   - action: action_retrieve_faq
+#   # - slot_was_set:
+#   #   - requested_faq: "What are some tips for saving money?"
+#   #- action: utter_faq_response
